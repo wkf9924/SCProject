@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetupViewController">
+            <connections>
+                <outlet property="exitaccountBut" destination="pK1-Jt-K9s" id="A0n-Hg-80b"/>
+                <outlet property="setupTableView" destination="m2b-Hi-oA1" id="S3G-EH-csq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pK1-Jt-K9s">
+                    <rect key="frame" x="30" y="333" width="315" height="45"/>
+                    <color key="backgroundColor" red="0.71774384469999997" green="0.0" blue="0.0072144165430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ZDn-aj-BQC"/>
+                        <constraint firstAttribute="width" constant="315" id="ooB-pp-gEj"/>
+                    </constraints>
+                    <state key="normal" title="退出账号">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="exitaccountButton:" destination="-1" eventType="touchUpInside" id="SOq-4M-RHD"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m2b-Hi-oA1">
+                    <rect key="frame" x="0.0" y="83" width="375" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="4CO-MP-xNu"/>
+                        <constraint firstAttribute="height" constant="300" id="TqU-eU-xtm"/>
+                        <constraint firstAttribute="width" constant="375" id="Wpt-tv-7IF"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TqU-eU-xtm"/>
+                        </mask>
+                    </variation>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="m2b-Hi-oA1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="83" id="VuT-qN-cvf"/>
+                <constraint firstItem="m2b-Hi-oA1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="evb-rO-aeK"/>
+                <constraint firstItem="pK1-Jt-K9s" firstAttribute="centerX" secondItem="m2b-Hi-oA1" secondAttribute="centerX" id="hCE-Bj-gaf"/>
+                <constraint firstAttribute="trailing" secondItem="m2b-Hi-oA1" secondAttribute="trailing" id="icl-xM-ehT"/>
+                <constraint firstItem="pK1-Jt-K9s" firstAttribute="top" secondItem="m2b-Hi-oA1" secondAttribute="bottom" constant="50" id="unJ-ah-2oF"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="114.5" y="335.5"/>
+        </view>
+    </objects>
+</document>

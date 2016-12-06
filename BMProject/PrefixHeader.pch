@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  BMProject
+//
+//  Created by MengHuan on 15/4/19.
+//  Copyright (c) 2015年 MengHuan. All rights reserved.
+//
+
+#ifndef BMProject_PrefixHeader_pch
+#define BMProject_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+// framework
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// viewController
+#import "BaseViewController.h"
+
+// view
+#import "UIView+MHCommon.h"
+#import "UIColor+HexColor.h"
+#import "NSString+MHCommon.h"
+#import "UIView+AutoLayout.h"
+
+// define
+#import "MHDefine.h"
+
+// other
+#import "AppDelegate.h"
+#import "SVProgressHUD.h"
+#import "CMManager.h"
+#import "AppConfigure.h"
+#import "Config.h"
+#import "ZenKeyboard.h"
+
+
+#endif

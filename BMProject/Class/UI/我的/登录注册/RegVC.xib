@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegVC">
+            <connections>
+                <outlet property="LicenseImageView" destination="b5f-Vi-cYx" id="AKy-Z3-Nx0"/>
+                <outlet property="shopImageView" destination="mCg-49-pka" id="dNz-fK-kou"/>
+                <outlet property="shopName" destination="ccG-YY-ULj" id="lqm-Da-sgJ"/>
+                <outlet property="tfShopAddress" destination="0Ae-gN-mdn" id="nRl-5V-TjV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店铺名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYc-yZ-eeR">
+                    <rect key="frame" x="10" y="120" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店铺地址：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6J1-61-ghH">
+                    <rect key="frame" x="10" y="171" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="店铺图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gME-cf-xpI">
+                    <rect key="frame" x="20" y="232" width="128" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="上传营业执照" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fn-D9-sjO">
+                    <rect key="frame" x="173" y="232" width="127" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="iconfont-weibiaoti2" translatesAutoresizingMaskIntoConstraints="NO" id="b5f-Vi-cYx">
+                    <rect key="frame" x="173" y="273" width="127" height="110"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAO-SH-s0Q">
+                    <rect key="frame" x="10" y="403" width="300" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="gFH-mY-elZ"/>
+                    </constraints>
+                    <state key="normal" title="提交" backgroundImage="button1.png"/>
+                    <connections>
+                        <action selector="submit:" destination="-1" eventType="touchUpInside" id="ga5-xk-x4O"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入店铺名称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ccG-YY-ULj">
+                    <rect key="frame" x="100" y="116" width="210" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入店铺详细地址" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0Ae-gN-mdn">
+                    <rect key="frame" x="100" y="167" width="210" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="审核过程会在1-3个工作日内完成，请你耐心等待" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O43-co-RAt">
+                    <rect key="frame" x="10" y="453" width="300" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="iconfont-weibiaoti2" translatesAutoresizingMaskIntoConstraints="NO" id="mCg-49-pka">
+                    <rect key="frame" x="20" y="273" width="128" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="O36-qu-h7G"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="b5f-Vi-cYx" firstAttribute="width" secondItem="mCg-49-pka" secondAttribute="width" id="2QZ-PT-xSN"/>
+                <constraint firstItem="6Fn-D9-sjO" firstAttribute="leading" secondItem="b5f-Vi-cYx" secondAttribute="leading" id="7g2-JB-J3B"/>
+                <constraint firstItem="b5f-Vi-cYx" firstAttribute="leading" secondItem="mCg-49-pka" secondAttribute="trailing" constant="25" id="9sf-Gz-uW2"/>
+                <constraint firstItem="6J1-61-ghH" firstAttribute="leading" secondItem="TYc-yZ-eeR" secondAttribute="leading" id="AR8-Zu-Yg0"/>
+                <constraint firstItem="TYc-yZ-eeR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="IRt-5a-XmE"/>
+                <constraint firstAttribute="trailing" secondItem="ccG-YY-ULj" secondAttribute="trailing" constant="10" id="IRv-Qi-wvd"/>
+                <constraint firstItem="gME-cf-xpI" firstAttribute="top" secondItem="6J1-61-ghH" secondAttribute="bottom" constant="40" id="J6t-jN-iV0"/>
+                <constraint firstAttribute="trailing" secondItem="b5f-Vi-cYx" secondAttribute="trailing" constant="20" id="K6O-Im-qLY"/>
+                <constraint firstItem="b5f-Vi-cYx" firstAttribute="top" secondItem="6Fn-D9-sjO" secondAttribute="bottom" constant="20" id="QKu-Vq-5Ho"/>
+                <constraint firstItem="O43-co-RAt" firstAttribute="top" secondItem="qAO-SH-s0Q" secondAttribute="bottom" constant="15" id="SD8-SD-gh6"/>
+                <constraint firstAttribute="trailing" secondItem="O43-co-RAt" secondAttribute="trailing" constant="10" id="Tc1-lh-sir"/>
+                <constraint firstItem="mCg-49-pka" firstAttribute="leading" secondItem="gME-cf-xpI" secondAttribute="leading" id="TgB-fT-XX1"/>
+                <constraint firstItem="ccG-YY-ULj" firstAttribute="centerY" secondItem="TYc-yZ-eeR" secondAttribute="centerY" id="VFd-gL-fBN"/>
+                <constraint firstItem="mCg-49-pka" firstAttribute="trailing" secondItem="gME-cf-xpI" secondAttribute="trailing" id="Y79-K6-Job"/>
+                <constraint firstItem="O43-co-RAt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="a7L-Ci-JrC"/>
+                <constraint firstItem="mCg-49-pka" firstAttribute="top" secondItem="gME-cf-xpI" secondAttribute="bottom" constant="20" id="dGX-qU-wbK"/>
+                <constraint firstItem="qAO-SH-s0Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="eWL-tZ-RKe"/>
+                <constraint firstItem="6Fn-D9-sjO" firstAttribute="centerY" secondItem="gME-cf-xpI" secondAttribute="centerY" id="eei-ws-Rm8"/>
+                <constraint firstItem="6Fn-D9-sjO" firstAttribute="trailing" secondItem="b5f-Vi-cYx" secondAttribute="trailing" id="hEL-PJ-gfi"/>
+                <constraint firstAttribute="trailing" secondItem="qAO-SH-s0Q" secondAttribute="trailing" constant="10" id="iC5-Re-Lk9"/>
+                <constraint firstItem="mCg-49-pka" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="iQM-Ph-wOg"/>
+                <constraint firstItem="ccG-YY-ULj" firstAttribute="leading" secondItem="TYc-yZ-eeR" secondAttribute="trailing" constant="5" id="isx-q0-IrT"/>
+                <constraint firstItem="0Ae-gN-mdn" firstAttribute="trailing" secondItem="ccG-YY-ULj" secondAttribute="trailing" id="mdV-kB-0OD"/>
+                <constraint firstItem="qAO-SH-s0Q" firstAttribute="top" secondItem="mCg-49-pka" secondAttribute="bottom" constant="20" id="pER-hk-6Ow"/>
+                <constraint firstItem="6J1-61-ghH" firstAttribute="top" secondItem="TYc-yZ-eeR" secondAttribute="bottom" constant="30" id="s34-QH-6ky"/>
+                <constraint firstItem="TYc-yZ-eeR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="sOE-md-GdJ"/>
+                <constraint firstItem="b5f-Vi-cYx" firstAttribute="height" secondItem="mCg-49-pka" secondAttribute="height" id="sst-3b-Z52"/>
+                <constraint firstItem="0Ae-gN-mdn" firstAttribute="leading" secondItem="ccG-YY-ULj" secondAttribute="leading" id="ta3-AS-dxn"/>
+                <constraint firstItem="0Ae-gN-mdn" firstAttribute="centerY" secondItem="6J1-61-ghH" secondAttribute="centerY" id="ytL-gK-04D"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="337" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button1.png" width="600" height="80"/>
+        <image name="iconfont-weibiaoti2" width="128" height="128"/>
+    </resources>
+</document>

@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8a8a14b1-f865-d743-b977-ecd9223e7031++4702",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "8a8a14b1-f865-d743-b977-ecd9223e7031++1831" : {
+
+    },
+    "8a8a14b1-f865-d743-b977-ecd9223e7031++4702" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8a8a14b1-f865-d743-b977-ecd9223e7031++1831" : 0,
+    "8a8a14b1-f865-d743-b977-ecd9223e7031++4702" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DB060040-FC85-4E60-9922-4BAF5370DB20",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8a8a14b1-f865-d743-b977-ecd9223e7031++1831" : "MobileAdv\/",
+    "8a8a14b1-f865-d743-b977-ecd9223e7031++4702" : "SCShopProject\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BMProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BMProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.0.119\/svn\/mobProject",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8a8a14b1-f865-d743-b977-ecd9223e7031++1831"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.0.254\/svn\/mobProject",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8a8a14b1-f865-d743-b977-ecd9223e7031++4702"
+    }
+  ]
+}

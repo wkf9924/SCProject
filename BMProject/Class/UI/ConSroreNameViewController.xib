@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConSroreNameViewController">
+            <connections>
+                <outlet property="ConvstorenameTextFlid" destination="ooZ-a0-0Xq" id="RIX-aH-TLL"/>
+                <outlet property="ConvstorenameView" destination="wmi-Tf-5Sp" id="1Ey-ga-fIG"/>
+                <outlet property="view" destination="lqR-ja-sVq" id="noc-kZ-6Wt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lqR-ja-sVq">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmi-Tf-5Sp">
+                    <rect key="frame" x="0.0" y="64" width="320" height="80"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooZ-a0-0Xq">
+                            <rect key="frame" x="0.0" y="25" width="320" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="OkU-Zg-Kxe"/>
+                        <constraint firstItem="ooZ-a0-0Xq" firstAttribute="centerY" secondItem="wmi-Tf-5Sp" secondAttribute="centerY" id="YYA-bL-nQV"/>
+                        <constraint firstItem="ooZ-a0-0Xq" firstAttribute="leading" secondItem="wmi-Tf-5Sp" secondAttribute="leading" id="nvk-H1-OBj"/>
+                        <constraint firstAttribute="trailing" secondItem="ooZ-a0-0Xq" secondAttribute="trailing" id="pRR-T6-PJz"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6f-Hf-aTE">
+                    <rect key="frame" x="20" y="196" width="280" height="34"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.71774384469999997" green="0.0" blue="0.0072144165430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="保存"/>
+                    <connections>
+                        <action selector="PreservationBut:" destination="-1" eventType="touchUpInside" id="E5U-Vd-XNJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帅气的便利店名字有助于你吸引顾客的眼球" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYP-wk-5cn">
+                    <rect key="frame" x="20" y="144" width="266" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wmi-Tf-5Sp" firstAttribute="centerX" secondItem="lqR-ja-sVq" secondAttribute="centerX" id="1Es-Ps-ooz"/>
+                <constraint firstAttribute="trailing" secondItem="d6f-Hf-aTE" secondAttribute="trailing" constant="20" id="3bh-Hg-NHd"/>
+                <constraint firstAttribute="trailing" secondItem="wmi-Tf-5Sp" secondAttribute="trailing" id="4Iv-JW-9Iv"/>
+                <constraint firstItem="wmi-Tf-5Sp" firstAttribute="top" secondItem="lqR-ja-sVq" secondAttribute="top" constant="64" id="7nQ-om-5E7"/>
+                <constraint firstItem="d6f-Hf-aTE" firstAttribute="leading" secondItem="lqR-ja-sVq" secondAttribute="leading" constant="20" id="KRX-Dw-jiI"/>
+                <constraint firstItem="wmi-Tf-5Sp" firstAttribute="leading" secondItem="lqR-ja-sVq" secondAttribute="leading" id="WWJ-L6-pDz"/>
+                <constraint firstAttribute="trailing" secondItem="d6f-Hf-aTE" secondAttribute="trailing" constant="20" id="eSv-So-H8D"/>
+                <constraint firstItem="d6f-Hf-aTE" firstAttribute="centerX" secondItem="lqR-ja-sVq" secondAttribute="centerX" id="jb4-b0-cs7"/>
+                <constraint firstItem="d6f-Hf-aTE" firstAttribute="leading" secondItem="lqR-ja-sVq" secondAttribute="leading" constant="20" id="nri-FF-fsk"/>
+                <constraint firstItem="d6f-Hf-aTE" firstAttribute="top" secondItem="MYP-wk-5cn" secondAttribute="bottom" constant="35" id="oLG-9X-ov8"/>
+                <constraint firstItem="MYP-wk-5cn" firstAttribute="top" secondItem="wmi-Tf-5Sp" secondAttribute="bottom" id="r8v-TZ-Z1t"/>
+                <constraint firstItem="MYP-wk-5cn" firstAttribute="leading" secondItem="lqR-ja-sVq" secondAttribute="leading" constant="20" id="wUm-G3-fZ4"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KRX-Dw-jiI"/>
+                    <exclude reference="eSv-So-H8D"/>
+                    <exclude reference="jb4-b0-cs7"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
